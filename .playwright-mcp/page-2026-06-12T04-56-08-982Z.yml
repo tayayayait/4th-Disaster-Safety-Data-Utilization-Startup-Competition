@@ -1,0 +1,38 @@
+- generic [ref=e2]:
+    - banner [ref=e3]:
+        - 'status "현재 위험도: 경계" [ref=e4]': 경계
+        - generic [ref=e6]:
+            - generic [ref=e7]: 시민 화면
+            - heading "침수퇴로 AI" [level=1] [ref=e8]
+        - generic [ref=e9]:
+            - text: 시나리오
+            - combobox "위험 시나리오 변경" [ref=e10]:
+                - option "평상시"
+                - option "주의 강우"
+                - option "경계 침수흔적 중첩" [selected]
+                - option "심각 통제/범람"
+                - option "데이터 지연"
+    - main [ref=e11]:
+        - generic "홈 화면 로딩 중" [ref=e12]
+    - navigation "주요 메뉴" [ref=e22]:
+        - list [ref=e23]:
+            - listitem [ref=e24]:
+                - link "홈" [ref=e25] [cursor=pointer]:
+                    - /url: /
+                    - img [ref=e26]
+                    - generic [ref=e29]: 홈
+            - listitem [ref=e30]:
+                - link "경로" [ref=e31] [cursor=pointer]:
+                    - /url: /routes
+                    - img [ref=e32]
+                    - generic [ref=e36]: 경로
+            - listitem [ref=e37]:
+                - link "대피소" [ref=e38] [cursor=pointer]:
+                    - /url: /shelters
+                    - img [ref=e39]
+                    - generic [ref=e43]: 대피소
+            - listitem [ref=e44]:
+                - link "도움" [ref=e45] [cursor=pointer]:
+                    - /url: /help
+                    - img [ref=e46]
+                    - generic [ref=e49]: 도움

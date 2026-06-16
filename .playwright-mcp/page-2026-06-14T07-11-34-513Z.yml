@@ -1,0 +1,61 @@
+- generic [ref=e2]:
+    - banner [ref=e3]:
+        - 'status "현재 위험도: 안전" [ref=e61]': 안전
+        - generic [ref=e6]:
+            - generic [ref=e7]: 시민 화면
+            - heading "침수퇴로 AI" [level=1] [ref=e8]
+        - generic [ref=e9]:
+            - generic [ref=e10]: 상태
+            - generic [ref=e11]: 재난 발생 (침수/범람)
+    - main [ref=e12]:
+        - generic [ref=e62]:
+            - generic [ref=e64]:
+                - heading "주소로 위치 설정" [level=2] [ref=e65]
+                - paragraph [ref=e66]: 현재 위치를 사용할 수 없습니다. 주소를 입력하면 해당 위치 기준으로 대피 경로를 계산합니다.
+                - generic [ref=e67]:
+                    - generic [ref=e68]:
+                        - generic [ref=e69]: 주소 또는 장소명
+                        - textbox "주소 또는 장소명" [ref=e70]:
+                            - /placeholder: "예: 강남역, 역삼로 153"
+                            - text: 강남역
+                    - button "주소 검색" [ref=e71]
+                - button "입력 지우기" [ref=e78]
+                - list [ref=e79]:
+                    - listitem [ref=e80]:
+                        - button "강남역 확실한 정보 없음 · 시연 좌표" [ref=e81]:
+                            - generic [ref=e82]: 강남역
+                            - generic [ref=e83]: 확실한 정보 없음 · 시연 좌표
+            - region "위치 권한 요청":
+                - generic [ref=e72]:
+                    - heading "현재 위치를 사용할까요?" [level=2] [ref=e73]
+                    - paragraph [ref=e74]: 위치를 허용하면 현재 위치 기준 2km 반경의 침수 위험과 가장 가까운 대피소를 안내합니다. 위치 정보는 단말기 안에서만 사용되며 저장되지 않습니다.
+                    - generic [ref=e75]:
+                        - button "허용 안 함" [ref=e76]
+                        - button "위치 허용" [ref=e77]
+    - navigation "주요 메뉴" [ref=e23]:
+        - list [ref=e24]:
+            - listitem [ref=e25]:
+                - link "홈" [ref=e26] [cursor=pointer]:
+                    - /url: /
+                    - img [ref=e27]
+                    - generic [ref=e30]: 홈
+            - listitem [ref=e31]:
+                - link "경로" [ref=e32] [cursor=pointer]:
+                    - /url: /routes
+                    - img [ref=e33]
+                    - generic [ref=e37]: 경로
+            - listitem [ref=e38]:
+                - link "대피소" [ref=e39] [cursor=pointer]:
+                    - /url: /shelters
+                    - img [ref=e40]
+                    - generic [ref=e44]: 대피소
+            - listitem [ref=e45]:
+                - link "현장" [ref=e46] [cursor=pointer]:
+                    - /url: /ops/cctv
+                    - img [ref=e47]
+                    - generic [ref=e54]: 현장
+            - listitem [ref=e55]:
+                - link "도움" [ref=e56] [cursor=pointer]:
+                    - /url: /help
+                    - img [ref=e57]
+                    - generic [ref=e60]: 도움

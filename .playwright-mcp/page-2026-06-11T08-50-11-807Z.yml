@@ -1,0 +1,62 @@
+- generic [ref=e2]:
+    - banner [ref=e3]:
+        - 'status "현재 위험도: 경계" [ref=e4]': 경계
+        - heading "침수퇴로 AI" [level=1] [ref=e6]
+        - generic [ref=e7]:
+            - text: 시나리오
+            - combobox "위험 시나리오 변경" [ref=e8]:
+                - option "안전"
+                - option "주의"
+                - option "경계" [selected]
+                - option "심각"
+                - option "정보없음"
+    - main [ref=e9]:
+        - generic [ref=e10]:
+            - generic "지도 로딩 중" [ref=e12]: 지도 불러오는 중…
+            - region "추천 행동" [ref=e13]:
+                - generic [ref=e14]: 경계 · 추천 행동
+                - heading "안전한 대피소 이동을 준비하세요" [level=2] [ref=e15]
+                - paragraph [ref=e16]: 추천 경로 외 구간은 침수 위험이 있습니다.
+                - generic [ref=e17]:
+                    - generic [ref=e18]: 추천 대피소
+                    - generic [ref=e19]: 역삼1동주민센터
+                    - generic [ref=e20]: 약 537m · 도보 권장
+                - generic [ref=e21]:
+                    - link "대피 경로 보기" [ref=e22] [cursor=pointer]:
+                        - /url: /routes?mode=WALK
+                        - img [ref=e23]
+                        - text: 대피 경로 보기
+                    - link "차량 경로" [ref=e26] [cursor=pointer]:
+                        - /url: /routes?mode=DRIVE
+                        - img [ref=e27]
+                        - text: 차량 경로
+                - generic [ref=e31]: 데이터 기준 2026-06-11 14:30·데이터 상태 대체 데이터
+            - dialog "위치 권한 요청" [ref=e32]:
+                - generic [ref=e33]:
+                    - heading "현재 위치를 사용할까요?" [level=2] [ref=e34]
+                    - paragraph [ref=e35]: 위치를 허용하면 현재 위치 기준 2km 반경의 침수 위험과 가장 가까운 대피소를 안내합니다. 위치 정보는 단말기 안에서만 사용되며 저장되지 않습니다.
+                    - generic [ref=e36]:
+                        - button "허용 안 함" [ref=e37]
+                        - button "위치 허용" [ref=e38]
+    - navigation "주요 메뉴" [ref=e39]:
+        - list [ref=e40]:
+            - listitem [ref=e41]:
+                - link "홈" [ref=e42] [cursor=pointer]:
+                    - /url: /
+                    - img [ref=e43]
+                    - generic [ref=e46]: 홈
+            - listitem [ref=e47]:
+                - link "경로" [ref=e48] [cursor=pointer]:
+                    - /url: /routes
+                    - img [ref=e49]
+                    - generic [ref=e53]: 경로
+            - listitem [ref=e54]:
+                - link "대피소" [ref=e55] [cursor=pointer]:
+                    - /url: /shelters
+                    - img [ref=e56]
+                    - generic [ref=e60]: 대피소
+            - listitem [ref=e61]:
+                - link "도움" [ref=e62] [cursor=pointer]:
+                    - /url: /help
+                    - img [ref=e63]
+                    - generic [ref=e66]: 도움

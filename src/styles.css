@@ -1,0 +1,169 @@
+@import "tailwindcss" source(none);
+@import "tw-animate-css";
+@source "../src";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * 침수퇴로 AI — 디자인 토큰 (상세서 §6~§9)
+ */
+
+@theme inline {
+  --font-sans:
+    "Pretendard", "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  --color-background: var(--bg);
+  --color-foreground: var(--text);
+  --color-card: var(--surface);
+  --color-card-foreground: var(--text);
+  --color-popover: var(--surface);
+  --color-popover-foreground: var(--text);
+  --color-primary: var(--primary);
+  --color-primary-foreground: #ffffff;
+  --color-secondary: var(--surface-alt);
+  --color-secondary-foreground: var(--text);
+  --color-muted: var(--surface-alt);
+  --color-muted-foreground: var(--text-muted);
+  --color-accent: var(--surface-alt);
+  --color-accent-foreground: var(--text);
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #ffffff;
+  --color-border: var(--border-soft);
+  --color-input: var(--border);
+  --color-ring: var(--focus);
+}
+
+:root {
+  /* §6.1 기본 */
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-alt: #f1f5f9;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --text-subtle: #64748b;
+  --border: #cbd5e1;
+  --border-soft: #e2e8f0;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --focus: #1d4ed8;
+
+  /* §6.2 위험도 */
+  --risk-safe-bg: #dcfce7;
+  --risk-safe-text: #166534;
+  --risk-safe-overlay: rgba(22, 163, 74, 0.16);
+
+  --risk-watch-bg: #fef9c3;
+  --risk-watch-text: #854d0e;
+  --risk-watch-overlay: rgba(234, 179, 8, 0.22);
+
+  --risk-warning-bg: #ffedd5;
+  --risk-warning-text: #9a3412;
+  --risk-warning-overlay: rgba(249, 115, 22, 0.28);
+
+  --risk-critical-bg: #fee2e2;
+  --risk-critical-text: #991b1b;
+  --risk-critical-overlay: rgba(220, 38, 38, 0.36);
+
+  --risk-unknown-bg: #e2e8f0;
+  --risk-unknown-text: #334155;
+  --risk-unknown-overlay: rgba(100, 116, 139, 0.18);
+
+  /* 경로선 */
+  --route-recommended: #2563eb;
+  --route-alternative: #64748b;
+  --route-rejected: #dc2626;
+  --route-flood: #ea580c;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  .ops-shell {
+    display: grid;
+    grid-template-columns: 248px minmax(0, 1fr) 360px;
+    min-height: calc(100vh - 56px);
+  }
+
+  .ops-detail-drawer {
+    display: none;
+  }
+
+  .ops-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  @media (max-width: 1179px) {
+    .ops-shell {
+      grid-template-columns: 248px minmax(0, 1fr);
+      padding-bottom: 220px;
+    }
+
+    .ops-detail-desktop {
+      display: none;
+    }
+
+    .ops-detail-drawer {
+      position: fixed;
+      right: 0;
+      bottom: calc(64px + env(safe-area-inset-bottom));
+      left: 248px;
+      z-index: 40;
+      display: block;
+      min-height: 176px;
+      box-shadow: 0 -12px 30px rgba(15, 23, 42, 0.12);
+    }
+  }
+
+  @media (max-width: 760px) {
+    .ops-shell {
+      display: block;
+      padding-bottom: 220px;
+    }
+
+    .ops-sidebar {
+      border-right: 0;
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .ops-nav {
+      flex-direction: row;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .ops-nav-item {
+      flex: 0 0 auto;
+    }
+
+    .ops-detail-drawer {
+      left: 0;
+    }
+  }
+}

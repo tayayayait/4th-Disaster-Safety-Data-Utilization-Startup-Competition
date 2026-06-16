@@ -1,0 +1,104 @@
+- generic [ref=e2]:
+    - banner [ref=e3]:
+        - 'status "현재 위험도: 경계" [ref=e4]': 경계
+        - heading "침수퇴로 AI" [level=1] [ref=e6]
+        - generic [ref=e7]:
+            - text: 시나리오
+            - combobox "위험 시나리오 변경" [ref=e8]:
+                - option "안전"
+                - option "주의"
+                - option "경계" [selected]
+                - option "심각"
+                - option "정보없음"
+    - main [ref=e9]:
+        - generic [ref=e67]:
+            - generic [ref=e69]:
+                - generic "네이버 지도" [ref=e70]
+                - alert [ref=e71]: 네이버 지도 설정이 없습니다. VITE_NAVER_MAPS_CLIENT_ID를 확인하세요.
+                - list "지도 데이터 목록" [ref=e72]:
+                    - listitem [ref=e73]: "현재 위치: 37.49790, 127.02760"
+                    - listitem [ref=e74]: 역삼초등학교 체육관
+                    - listitem [ref=e75]: 강남구민회관
+                    - listitem [ref=e76]: 도곡중학교
+                    - listitem [ref=e77]: 강남세브란스병원 지하주차장
+                    - listitem [ref=e78]: 역삼1동주민센터
+                    - listitem [ref=e79]: 선릉초등학교
+                    - listitem [ref=e80]: 삼성2동주민센터
+                    - listitem [ref=e81]: 역삼중학교
+                    - listitem [ref=e82]: 대치1동주민센터
+                    - listitem [ref=e83]: 휘문고등학교
+                    - listitem [ref=e84]: 강남구청 지하 1층
+                    - listitem [ref=e85]: 언주중학교
+                    - listitem [ref=e86]: 논현1동주민센터
+                    - listitem [ref=e87]: 압구정중학교
+                    - listitem [ref=e88]: 신사초등학교
+                    - listitem [ref=e89]: 삼성중학교
+                    - listitem [ref=e90]: 수서역 지하대합실
+                    - listitem [ref=e91]: 개포1동주민센터
+                    - listitem [ref=e92]: 청담초등학교
+                    - listitem [ref=e93]: 도곡1동주민센터
+                    - listitem [ref=e94]: 대치초등학교
+                    - listitem [ref=e95]: 삼성1동주민센터
+                    - listitem [ref=e96]: 강남교육청
+                    - listitem [ref=e97]: 개포중학교
+                    - listitem [ref=e98]: 압구정초등학교
+                    - listitem [ref=e99]: 역삼·강남역 일대 저지대
+                    - listitem [ref=e100]: 탄천변 저지대
+                    - listitem [ref=e101]: 선정릉 인근 침수흔적
+                    - listitem [ref=e102]: 추천 도보 경로
+            - generic [ref=e104]:
+                - heading "주소로 위치 설정" [level=2] [ref=e105]
+                - paragraph [ref=e106]: 현재 위치를 사용할 수 없습니다. 주소를 입력하면 해당 위치 기준으로 대피 경로를 계산합니다.
+                - generic [ref=e107]:
+                    - generic [ref=e108]:
+                        - generic [ref=e109]: 주소 또는 장소명
+                        - textbox "주소 또는 장소명" [ref=e110]:
+                            - /placeholder: "예: 강남역, 역삼로 153"
+                            - text: 강남역
+                    - button "주소로 계산" [ref=e111]
+                - button "입력 지우기" [ref=e131]
+                - list [ref=e132]:
+                    - listitem [ref=e133]:
+                        - button "강남역 확실한 정보 없음 · 시연 좌표" [ref=e134]:
+                            - generic [ref=e135]: 강남역
+                            - generic [ref=e136]: 확실한 정보 없음 · 시연 좌표
+            - region "추천 행동" [ref=e112]:
+                - generic [ref=e113]: 경계 · 추천 행동
+                - heading "안전한 대피소 이동을 준비하세요" [level=2] [ref=e114]
+                - paragraph [ref=e115]: 추천 경로 외 구간은 침수 위험이 있습니다.
+                - generic [ref=e116]:
+                    - generic [ref=e117]: 추천 대피소
+                    - generic [ref=e118]: 역삼1동주민센터
+                    - generic [ref=e119]: 약 537m · 도보 권장
+                - generic [ref=e120]:
+                    - link "도보 경로" [ref=e121] [cursor=pointer]:
+                        - /url: /routes?mode=WALK
+                        - img [ref=e122]
+                        - text: 도보 경로
+                    - link "차량 경로" [ref=e125] [cursor=pointer]:
+                        - /url: /routes?mode=DRIVE
+                        - img [ref=e126]
+                        - text: 차량 경로
+                - generic [ref=e130]: 데이터 기준 2026-06-11 14:30
+    - navigation "주요 메뉴" [ref=e39]:
+        - list [ref=e40]:
+            - listitem [ref=e41]:
+                - link "홈" [ref=e42] [cursor=pointer]:
+                    - /url: /
+                    - img [ref=e43]
+                    - generic [ref=e46]: 홈
+            - listitem [ref=e47]:
+                - link "경로" [ref=e48] [cursor=pointer]:
+                    - /url: /routes
+                    - img [ref=e49]
+                    - generic [ref=e53]: 경로
+            - listitem [ref=e54]:
+                - link "대피소" [ref=e55] [cursor=pointer]:
+                    - /url: /shelters
+                    - img [ref=e56]
+                    - generic [ref=e60]: 대피소
+            - listitem [ref=e61]:
+                - link "도움" [ref=e62] [cursor=pointer]:
+                    - /url: /help
+                    - img [ref=e63]
+                    - generic [ref=e66]: 도움

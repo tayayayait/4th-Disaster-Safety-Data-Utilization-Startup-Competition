@@ -1,0 +1,57 @@
+project_id = "qsuxpldbwzqnomvtmtyw"
+
+[functions.naver-directions]
+enabled = true
+verify_jwt = false
+import_map = "./functions/naver-directions/deno.json"
+entrypoint = "./functions/naver-directions/index.ts"
+
+[functions.tmap-pedestrian]
+enabled = true
+verify_jwt = false
+import_map = "./functions/tmap-pedestrian/deno.json"
+entrypoint = "./functions/tmap-pedestrian/index.ts"
+
+[functions.weather]
+enabled = true
+verify_jwt = false
+import_map = "./functions/weather/deno.json"
+entrypoint = "./functions/weather/index.ts"
+
+[functions.disaster-messages]
+enabled = true
+verify_jwt = false
+import_map = "./functions/disaster-messages/deno.json"
+entrypoint = "./functions/disaster-messages/index.ts"
+
+[functions.gemini-chat]
+enabled = true
+verify_jwt = false
+import_map = "./functions/gemini-chat/deno.json"
+entrypoint = "./functions/gemini-chat/index.ts"
+
+[functions.gemini-notice]
+enabled = true
+verify_jwt = false
+import_map = "./functions/gemini-notice/deno.json"
+entrypoint = "./functions/gemini-notice/index.ts"
+
+[functions.sensors]
+enabled = true
+verify_jwt = false
+entrypoint = "./functions/sensors/index.ts"
+
+[functions.safemap-feature-info]
+enabled = true
+verify_jwt = false
+entrypoint = "./functions/safemap-feature-info/index.ts"
+
+[functions.traffic-events]
+enabled = true
+verify_jwt = false
+entrypoint = "./functions/traffic-events/index.ts"
+
+[functions.cctv-info]
+enabled = true
+verify_jwt = false
+entrypoint = "./functions/cctv-info/index.ts"

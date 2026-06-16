@@ -1,0 +1,101 @@
+- generic [ref=e2]:
+    - banner [ref=e3]:
+        - 'status "현재 위험도: 안전" [ref=e61]': 안전
+        - generic [ref=e6]:
+            - generic [ref=e7]: 시민 화면
+            - heading "침수퇴로 AI" [level=1] [ref=e8]
+        - generic [ref=e9]:
+            - generic [ref=e10]: 상태
+            - generic [ref=e11]: 재난 발생 (침수/범람)
+    - main [ref=e12]:
+        - generic [ref=e62]:
+            - generic [ref=e85]:
+                - generic "네이버 지도" [ref=e86]
+                - button "지도를 현재 위치로 이동" [ref=e87]:
+                    - img [ref=e88]
+                    - generic [ref=e91]: 내 위치
+                - alert [ref=e92]: Cannot read properties of null (reading 'LatLng')
+                - list "지도 데이터 목록" [ref=e93]:
+                    - listitem [ref=e94]: "현재 위치: 37.49790, 127.02760"
+                    - listitem [ref=e95]: "대피소: 삼풍아파트, 확인필요, 현재 위치 기준 1.3km"
+                    - listitem [ref=e96]: "대피소: 리버빌아파트, 확인필요, 현재 위치 기준 3.8km"
+                    - listitem [ref=e97]: "대피소: 서빙고동 주민센터, 확인필요, 현재 위치 기준 3.8km"
+                    - listitem [ref=e98]: "대피소: 신동아아파트, 확인필요, 현재 위치 기준 3.9km"
+                    - listitem [ref=e99]: "대피소: 보광동 주민센터, 확인필요, 현재 위치 기준 4.0km"
+                    - listitem [ref=e100]: "대피소: 금호베스트빌아파트, 확인필요, 현재 위치 기준 4.2km"
+                    - listitem [ref=e101]: "대피소: 용산푸르지오파크타운아파트, 확인필요, 현재 위치 기준 4.3km"
+                    - listitem [ref=e102]: "대피소: 여선교회전국연합회관, 확인필요, 현재 위치 기준 4.4km"
+                    - listitem [ref=e103]: "대피소: 한국폴리텍대학 서울정수캠퍼스 본관동, 확인필요, 현재 위치 기준 4.5km"
+                    - listitem [ref=e104]: "대피소: 성광빌딩, 확인필요, 현재 위치 기준 4.8km"
+                    - listitem [ref=e105]: "대피소: 제일기획빌딩, 확인필요, 현재 위치 기준 4.8km"
+                    - listitem [ref=e106]: "대피소: 강변금호타운아파트, 확인필요, 현재 위치 기준 4.9km"
+                    - listitem [ref=e107]: "대피소: 국립중앙박물관, 확인필요, 현재 위치 기준 5.0km"
+                    - listitem [ref=e108]: 추천 도보 경로
+            - region "대피시설 선택" [ref=e109]:
+                - generic [ref=e110]:
+                    - generic [ref=e111]:
+                        - generic [ref=e112]: 대피시설
+                        - generic [ref=e113]: 가까운 대피소 자동 추천
+                    - combobox "홈 대피시설 선택" [ref=e114]:
+                        - option "자동 추천" [selected]
+                        - option "삼풍아파트 · 확인필요 · 1.3km"
+                        - option "리버빌아파트 · 확인필요 · 3.8km"
+                        - option "서빙고동 주민센터 · 확인필요 · 3.8km"
+                        - option "신동아아파트 · 확인필요 · 3.9km"
+                        - option "보광동 주민센터 · 확인필요 · 4.0km"
+                        - option "금호베스트빌아파트 · 확인필요 · 4.2km"
+                        - option "용산푸르지오파크타운아파트 · 확인필요 · 4.3km"
+                        - option "여선교회전국연합회관 · 확인필요 · 4.4km"
+                        - option "한국폴리텍대학 서울정수캠퍼스 본관동 · 확인필요 · 4.5km"
+                        - option "성광빌딩 · 확인필요 · 4.8km"
+                        - option "제일기획빌딩 · 확인필요 · 4.8km"
+                        - option "강변금호타운아파트 · 확인필요 · 4.9km"
+                        - option "국립중앙박물관 · 확인필요 · 5.0km"
+            - region "추천 행동" [ref=e115]:
+                - generic [ref=e116]: 안전 · 추천 행동
+                - heading "위험 구간 확인" [level=2] [ref=e117]
+                - list [ref=e119]:
+                    - listitem [ref=e120]: "대피소 이동 중 회피해야 할 구간: 확인된 경로 위험요인 없음"
+                    - listitem [ref=e121]: 삼풍아파트 방향의 현장 통제와 침수 이력 여부를 확인해야 합니다.
+                    - listitem [ref=e122]: 경로가 제외된 경우 안전 경로 없음으로 보고 대체 행동을 선택하세요.
+                - generic [ref=e123]:
+                    - generic [ref=e124]: 추천 대피소
+                    - generic [ref=e125]: 삼풍아파트
+                    - generic [ref=e126]: 약 1.3km · 도보 권장
+                - generic [ref=e127]:
+                    - link "경로 미리 보기" [ref=e128] [cursor=pointer]:
+                        - /url: /routes?mode=WALK
+                        - img [ref=e129]
+                        - text: 경로 미리 보기
+                    - link "차량 경로" [ref=e132] [cursor=pointer]:
+                        - /url: /routes?mode=DRIVE
+                        - img [ref=e133]
+                        - text: 차량 경로
+                - generic [ref=e137]: 데이터 기준 2026-06-11 14:30·데이터 상태 대체 데이터
+    - navigation "주요 메뉴" [ref=e23]:
+        - list [ref=e24]:
+            - listitem [ref=e25]:
+                - link "홈" [ref=e26] [cursor=pointer]:
+                    - /url: /
+                    - img [ref=e27]
+                    - generic [ref=e30]: 홈
+            - listitem [ref=e31]:
+                - link "경로" [ref=e32] [cursor=pointer]:
+                    - /url: /routes
+                    - img [ref=e33]
+                    - generic [ref=e37]: 경로
+            - listitem [ref=e38]:
+                - link "대피소" [ref=e39] [cursor=pointer]:
+                    - /url: /shelters
+                    - img [ref=e40]
+                    - generic [ref=e44]: 대피소
+            - listitem [ref=e45]:
+                - link "현장" [ref=e46] [cursor=pointer]:
+                    - /url: /ops/cctv
+                    - img [ref=e47]
+                    - generic [ref=e54]: 현장
+            - listitem [ref=e55]:
+                - link "도움" [ref=e56] [cursor=pointer]:
+                    - /url: /help
+                    - img [ref=e57]
+                    - generic [ref=e60]: 도움

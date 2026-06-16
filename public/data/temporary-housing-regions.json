@@ -1,0 +1,475 @@
+{
+  "source": "행정안전부_이재민임시주거시설정보_20250901.csv",
+  "sourcePath": "api가이드파일\\행정안전부_이재민임시주거시설정보_20250901.csv",
+  "sourceKind": "regional-summary",
+  "generatedAt": "2026-06-14T05:57:55.142Z",
+  "dataDate": "2024-09-01",
+  "warning": "This CSV contains regional counts, area, and capacity only. It has no facility address or coordinates, so it must not be imported into shelter_operations for route guidance.",
+  "totals": {
+    "regions": 51,
+    "facilityCount": 23464,
+    "areaSquareMeters": 20750296.39,
+    "capacity": 7023303
+  },
+  "regions": [
+    {
+      "sequence": 1,
+      "dataDate": "2024-09-01",
+      "region": "서울특별시",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 1191,
+      "areaSquareMeters": 1202812.16,
+      "capacity": 368125
+    },
+    {
+      "sequence": 2,
+      "dataDate": "2024-09-01",
+      "region": "부산광역시",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 508,
+      "areaSquareMeters": 401294,
+      "capacity": 137800
+    },
+    {
+      "sequence": 3,
+      "dataDate": "2024-09-01",
+      "region": "대구광역시",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 297,
+      "areaSquareMeters": 389931.01,
+      "capacity": 139176
+    },
+    {
+      "sequence": 4,
+      "dataDate": "2024-09-01",
+      "region": "인천광역시",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 573,
+      "areaSquareMeters": 512746,
+      "capacity": 180195
+    },
+    {
+      "sequence": 5,
+      "dataDate": "2024-09-01",
+      "region": "광주광역시",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 184,
+      "areaSquareMeters": 199379.59,
+      "capacity": 76776
+    },
+    {
+      "sequence": 6,
+      "dataDate": "2024-09-01",
+      "region": "대전광역시",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 202,
+      "areaSquareMeters": 171712.73,
+      "capacity": 63093
+    },
+    {
+      "sequence": 7,
+      "dataDate": "2024-09-01",
+      "region": "울산광역시",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 289,
+      "areaSquareMeters": 168348.36,
+      "capacity": 59511
+    },
+    {
+      "sequence": 8,
+      "dataDate": "2024-09-01",
+      "region": "세종특별자치시",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 159,
+      "areaSquareMeters": 81172,
+      "capacity": 31152
+    },
+    {
+      "sequence": 9,
+      "dataDate": "2024-09-01",
+      "region": "경기도",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 3271,
+      "areaSquareMeters": 2369547.94,
+      "capacity": 852703
+    },
+    {
+      "sequence": 10,
+      "dataDate": "2024-09-01",
+      "region": "충청북도",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 824,
+      "areaSquareMeters": 517704,
+      "capacity": 183982
+    },
+    {
+      "sequence": 11,
+      "dataDate": "2024-09-01",
+      "region": "충청남도",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 1716,
+      "areaSquareMeters": 2119372.35,
+      "capacity": 653652
+    },
+    {
+      "sequence": 12,
+      "dataDate": "2024-09-01",
+      "region": "전라남도",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 1788,
+      "areaSquareMeters": 1524399.53,
+      "capacity": 548750
+    },
+    {
+      "sequence": 13,
+      "dataDate": "2024-09-01",
+      "region": "경상북도",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 1315,
+      "areaSquareMeters": 1197546.89,
+      "capacity": 388419
+    },
+    {
+      "sequence": 14,
+      "dataDate": "2024-09-01",
+      "region": "경상남도",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 1398,
+      "areaSquareMeters": 786452.91,
+      "capacity": 252633
+    },
+    {
+      "sequence": 15,
+      "dataDate": "2024-09-01",
+      "region": "제주특별자치도",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 194,
+      "areaSquareMeters": 100692.85,
+      "capacity": 32287
+    },
+    {
+      "sequence": 16,
+      "dataDate": "2024-09-01",
+      "region": "강원특별자치도",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 742,
+      "areaSquareMeters": 516389.48,
+      "capacity": 174924
+    },
+    {
+      "sequence": 17,
+      "dataDate": "2024-09-01",
+      "region": "전북특별자치도",
+      "facilityType": "이재민 임시주거시설",
+      "facilityCount": 590,
+      "areaSquareMeters": 479894.68,
+      "capacity": 166786
+    },
+    {
+      "sequence": 18,
+      "dataDate": "2024-09-01",
+      "region": "서울특별시",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 808,
+      "areaSquareMeters": 924717.59,
+      "capacity": 293121
+    },
+    {
+      "sequence": 19,
+      "dataDate": "2024-09-01",
+      "region": "부산광역시",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 312,
+      "areaSquareMeters": 319485.1,
+      "capacity": 111723
+    },
+    {
+      "sequence": 20,
+      "dataDate": "2024-09-01",
+      "region": "대구광역시",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 242,
+      "areaSquareMeters": 363138.55,
+      "capacity": 131326
+    },
+    {
+      "sequence": 21,
+      "dataDate": "2024-09-01",
+      "region": "인천광역시",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 309,
+      "areaSquareMeters": 327581.72,
+      "capacity": 112459
+    },
+    {
+      "sequence": 22,
+      "dataDate": "2024-09-01",
+      "region": "광주광역시",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 172,
+      "areaSquareMeters": 173089.47,
+      "capacity": 66787
+    },
+    {
+      "sequence": 23,
+      "dataDate": "2024-09-01",
+      "region": "대전광역시",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 102,
+      "areaSquareMeters": 118998.35,
+      "capacity": 43469
+    },
+    {
+      "sequence": 24,
+      "dataDate": "2024-09-01",
+      "region": "울산광역시",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 251,
+      "areaSquareMeters": 155672.16,
+      "capacity": 55972
+    },
+    {
+      "sequence": 25,
+      "dataDate": "2024-09-01",
+      "region": "세종특별자치시",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 101,
+      "areaSquareMeters": 74231,
+      "capacity": 28505
+    },
+    {
+      "sequence": 26,
+      "dataDate": "2024-09-01",
+      "region": "경기도",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 1223,
+      "areaSquareMeters": 1286287.65,
+      "capacity": 470765
+    },
+    {
+      "sequence": 27,
+      "dataDate": "2024-09-01",
+      "region": "충청북도",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 195,
+      "areaSquareMeters": 232852.64,
+      "capacity": 80781
+    },
+    {
+      "sequence": 28,
+      "dataDate": "2024-09-01",
+      "region": "충청남도",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 331,
+      "areaSquareMeters": 1358956.25,
+      "capacity": 379972
+    },
+    {
+      "sequence": 29,
+      "dataDate": "2024-09-01",
+      "region": "전라남도",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 289,
+      "areaSquareMeters": 622542.99,
+      "capacity": 223306
+    },
+    {
+      "sequence": 30,
+      "dataDate": "2024-09-01",
+      "region": "경상북도",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 533,
+      "areaSquareMeters": 667442.44,
+      "capacity": 226815
+    },
+    {
+      "sequence": 31,
+      "dataDate": "2024-09-01",
+      "region": "경상남도",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 483,
+      "areaSquareMeters": 431931.88,
+      "capacity": 153881
+    },
+    {
+      "sequence": 32,
+      "dataDate": "2024-09-01",
+      "region": "제주특별자치도",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 70,
+      "areaSquareMeters": 61471.93,
+      "capacity": 19555
+    },
+    {
+      "sequence": 33,
+      "dataDate": "2024-09-01",
+      "region": "강원특별자치도",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 239,
+      "areaSquareMeters": 268628.39,
+      "capacity": 93356
+    },
+    {
+      "sequence": 34,
+      "dataDate": "2024-09-01",
+      "region": "전북특별자치도",
+      "facilityType": "지진겸용 임시주거시설",
+      "facilityCount": 295,
+      "areaSquareMeters": 290586.07,
+      "capacity": 100996
+    },
+    {
+      "sequence": 35,
+      "dataDate": "2024-09-01",
+      "region": "서울특별시",
+      "facilityType": "마을회관",
+      "facilityCount": 1,
+      "areaSquareMeters": 165,
+      "capacity": 63
+    },
+    {
+      "sequence": 36,
+      "dataDate": "2024-09-01",
+      "region": "부산광역시",
+      "facilityType": "마을회관",
+      "facilityCount": 61,
+      "areaSquareMeters": 11706,
+      "capacity": 4380
+    },
+    {
+      "sequence": 37,
+      "dataDate": "2024-09-01",
+      "region": "대구광역시",
+      "facilityType": "마을회관",
+      "facilityCount": 27,
+      "areaSquareMeters": 4933.6,
+      "capacity": 1768
+    },
+    {
+      "sequence": 38,
+      "dataDate": "2024-09-01",
+      "region": "인천광역시",
+      "facilityType": "마을회관",
+      "facilityCount": 41,
+      "areaSquareMeters": 7014,
+      "capacity": 2638
+    },
+    {
+      "sequence": 39,
+      "dataDate": "2024-09-01",
+      "region": "광주광역시",
+      "facilityType": "마을회관",
+      "facilityCount": 1,
+      "areaSquareMeters": 115,
+      "capacity": 44
+    },
+    {
+      "sequence": 40,
+      "dataDate": "2024-09-01",
+      "region": "대전광역시",
+      "facilityType": "마을회관",
+      "facilityCount": 1,
+      "areaSquareMeters": 663,
+      "capacity": 200
+    },
+    {
+      "sequence": 41,
+      "dataDate": "2024-09-01",
+      "region": "울산광역시",
+      "facilityType": "마을회관",
+      "facilityCount": 0,
+      "areaSquareMeters": 0,
+      "capacity": 0
+    },
+    {
+      "sequence": 42,
+      "dataDate": "2024-09-01",
+      "region": "세종특별자치시",
+      "facilityType": "마을회관",
+      "facilityCount": 26,
+      "areaSquareMeters": 2554,
+      "capacity": 971
+    },
+    {
+      "sequence": 43,
+      "dataDate": "2024-09-01",
+      "region": "경기도",
+      "facilityType": "마을회관",
+      "facilityCount": 527,
+      "areaSquareMeters": 82875.12,
+      "capacity": 31549
+    },
+    {
+      "sequence": 44,
+      "dataDate": "2024-09-01",
+      "region": "충청북도",
+      "facilityType": "마을회관",
+      "facilityCount": 79,
+      "areaSquareMeters": 9899.29,
+      "capacity": 3046
+    },
+    {
+      "sequence": 45,
+      "dataDate": "2024-09-01",
+      "region": "충청남도",
+      "facilityType": "마을회관",
+      "facilityCount": 275,
+      "areaSquareMeters": 35298.77,
+      "capacity": 13005
+    },
+    {
+      "sequence": 46,
+      "dataDate": "2024-09-01",
+      "region": "전라남도",
+      "facilityType": "마을회관",
+      "facilityCount": 492,
+      "areaSquareMeters": 75755.36,
+      "capacity": 25461
+    },
+    {
+      "sequence": 47,
+      "dataDate": "2024-09-01",
+      "region": "경상북도",
+      "facilityType": "마을회관",
+      "facilityCount": 164,
+      "areaSquareMeters": 23411.47,
+      "capacity": 8545
+    },
+    {
+      "sequence": 48,
+      "dataDate": "2024-09-01",
+      "region": "경상남도",
+      "facilityType": "마을회관",
+      "facilityCount": 429,
+      "areaSquareMeters": 47758.17,
+      "capacity": 17845
+    },
+    {
+      "sequence": 49,
+      "dataDate": "2024-09-01",
+      "region": "제주특별자치도",
+      "facilityType": "마을회관",
+      "facilityCount": 37,
+      "areaSquareMeters": 12664.23,
+      "capacity": 4087
+    },
+    {
+      "sequence": 50,
+      "dataDate": "2024-09-01",
+      "region": "강원특별자치도",
+      "facilityType": "마을회관",
+      "facilityCount": 98,
+      "areaSquareMeters": 16994.27,
+      "capacity": 6424
+    },
+    {
+      "sequence": 51,
+      "dataDate": "2024-09-01",
+      "region": "전북특별자치도",
+      "facilityType": "마을회관",
+      "facilityCount": 9,
+      "areaSquareMeters": 1478.45,
+      "capacity": 524
+    }
+  ]
+}

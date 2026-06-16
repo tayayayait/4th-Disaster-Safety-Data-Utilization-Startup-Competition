@@ -1,0 +1,38 @@
+- generic [ref=e2]:
+    - banner [ref=e3]:
+        - 'status "현재 위험도: 심각" [ref=e4]': 심각
+        - generic [ref=e6]:
+            - generic [ref=e7]: 시민 화면
+            - heading "침수퇴로 AI" [level=1] [ref=e8]
+        - generic [ref=e9]:
+            - generic [ref=e10]: 상태
+            - generic [ref=e11]: 재난 발생 (침수/범람)
+    - main [ref=e12]:
+        - generic "홈 화면 로딩 중" [ref=e13]
+    - navigation "주요 메뉴" [ref=e23]:
+        - list [ref=e24]:
+            - listitem [ref=e25]:
+                - link "홈" [ref=e26] [cursor=pointer]:
+                    - /url: /
+                    - img [ref=e27]
+                    - generic [ref=e30]: 홈
+            - listitem [ref=e31]:
+                - link "경로" [ref=e32] [cursor=pointer]:
+                    - /url: /routes
+                    - img [ref=e33]
+                    - generic [ref=e37]: 경로
+            - listitem [ref=e38]:
+                - link "대피소" [ref=e39] [cursor=pointer]:
+                    - /url: /shelters
+                    - img [ref=e40]
+                    - generic [ref=e44]: 대피소
+            - listitem [ref=e45]:
+                - link "현장" [ref=e46] [cursor=pointer]:
+                    - /url: /ops/cctv
+                    - img [ref=e47]
+                    - generic [ref=e54]: 현장
+            - listitem [ref=e55]:
+                - link "도움" [ref=e56] [cursor=pointer]:
+                    - /url: /help
+                    - img [ref=e57]
+                    - generic [ref=e60]: 도움
