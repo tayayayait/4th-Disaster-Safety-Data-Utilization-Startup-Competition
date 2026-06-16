@@ -293,7 +293,7 @@ function CctvCard({ camera }: { camera: CctvFeed }) {
       <a
         href={camera.streamUrl}
         target="_blank"
-        rel="noreferrer"
+        rel="noopener"
         className="mt-3 inline-flex min-h-10 items-center gap-2 rounded-[8px] bg-[var(--primary)] px-3 text-[13px] font-extrabold text-white"
       >
         <ExternalLink size={15} aria-hidden />
